@@ -1,0 +1,289 @@
+[
+  {
+    "model": "gpt-6.1-terra",
+    "display_name": "GPT-6.1 Terra",
+    "trial": 1,
+    "reward": 1,
+    "termination": "completed",
+    "cells": 5059,
+    "flip_flops": 684,
+    "paired_functional_suites": [
+      "encrypt",
+      "decrypt",
+      "warm",
+      "overlap",
+      "reset",
+      "stream"
+    ],
+    "failed_checks": [],
+    "shell_commands": 12,
+    "agent_seconds": 173.091,
+    "evidence": "gpt-6.1-terra-trial-1"
+  },
+  {
+    "model": "gpt-6.1-terra",
+    "display_name": "GPT-6.1 Terra",
+    "trial": 2,
+    "reward": 0,
+    "termination": "completed",
+    "cells": 5527,
+    "flip_flops": 701,
+    "paired_functional_suites": [
+      "encrypt",
+      "decrypt",
+      "warm",
+      "overlap",
+      "reset",
+      "stream"
+    ],
+    "failed_checks": [
+      "cell_budget"
+    ],
+    "shell_commands": 12,
+    "agent_seconds": 185.055,
+    "evidence": "gpt-6.1-terra-trial-2"
+  },
+  {
+    "model": "gpt-6.1-terra",
+    "display_name": "GPT-6.1 Terra",
+    "trial": 3,
+    "reward": 0,
+    "termination": "completed",
+    "cells": 5301,
+    "flip_flops": 572,
+    "paired_functional_suites": [
+      "encrypt",
+      "decrypt",
+      "warm",
+      "overlap",
+      "reset",
+      "stream"
+    ],
+    "failed_checks": [
+      "cell_budget"
+    ],
+    "shell_commands": 12,
+    "agent_seconds": 199.249,
+    "evidence": "gpt-6.1-terra-trial-3"
+  },
+  {
+    "model": "deepseek-flash",
+    "display_name": "DeepSeek-V4.1-Flash",
+    "trial": 1,
+    "reward": 0,
+    "termination": "turn_limit",
+    "cells": null,
+    "flip_flops": null,
+    "paired_functional_suites": [],
+    "failed_checks": [
+      "rtl_decrypt",
+      "rtl_warm",
+      "rtl_overlap",
+      "rtl_reset",
+      "rtl_stream",
+      "synthesis"
+    ],
+    "shell_commands": 12,
+    "agent_seconds": 29.366,
+    "evidence": "flash-trial-1"
+  },
+  {
+    "model": "deepseek-flash",
+    "display_name": "DeepSeek-V4.1-Flash",
+    "trial": 2,
+    "reward": 0,
+    "termination": "turn_limit",
+    "cells": 3300,
+    "flip_flops": 314,
+    "paired_functional_suites": [
+      "encrypt"
+    ],
+    "failed_checks": [
+      "rtl_decrypt",
+      "rtl_warm",
+      "rtl_overlap",
+      "rtl_reset",
+      "rtl_stream",
+      "gate_decrypt",
+      "gate_warm",
+      "gate_overlap",
+      "gate_reset",
+      "gate_stream"
+    ],
+    "shell_commands": 12,
+    "agent_seconds": 27.502,
+    "evidence": "flash-trial-2"
+  },
+  {
+    "model": "deepseek-flash",
+    "display_name": "DeepSeek-V4.1-Flash",
+    "trial": 3,
+    "reward": 0,
+    "termination": "turn_limit",
+    "cells": null,
+    "flip_flops": null,
+    "paired_functional_suites": [],
+    "failed_checks": [
+      "rtl_decrypt",
+      "rtl_warm",
+      "rtl_overlap",
+      "rtl_reset",
+      "rtl_stream",
+      "synthesis"
+    ],
+    "shell_commands": 12,
+    "agent_seconds": 40.888,
+    "evidence": "flash-trial-3"
+  },
+  {
+    "model": "deepseek-v4-pro",
+    "display_name": "DeepSeek-V4-Pro",
+    "trial": 1,
+    "reward": 0,
+    "termination": "token_limit",
+    "cells": 3300,
+    "flip_flops": 314,
+    "paired_functional_suites": [
+      "encrypt"
+    ],
+    "failed_checks": [
+      "rtl_decrypt",
+      "rtl_warm",
+      "rtl_overlap",
+      "rtl_reset",
+      "rtl_stream",
+      "gate_decrypt",
+      "gate_warm",
+      "gate_overlap",
+      "gate_reset",
+      "gate_stream"
+    ],
+    "shell_commands": 6,
+    "agent_seconds": 134.635,
+    "evidence": "pro-trial-1"
+  },
+  {
+    "model": "deepseek-v4-pro",
+    "display_name": "DeepSeek-V4-Pro",
+    "trial": 2,
+    "reward": 0,
+    "termination": "token_limit",
+    "cells": 3300,
+    "flip_flops": 314,
+    "paired_functional_suites": [
+      "encrypt"
+    ],
+    "failed_checks": [
+      "rtl_decrypt",
+      "rtl_warm",
+      "rtl_overlap",
+      "rtl_reset",
+      "rtl_stream",
+      "gate_decrypt",
+      "gate_warm",
+      "gate_overlap",
+      "gate_reset",
+      "gate_stream"
+    ],
+    "shell_commands": 5,
+    "agent_seconds": 128.604,
+    "evidence": "pro-trial-2"
+  },
+  {
+    "model": "deepseek-v4-pro",
+    "display_name": "DeepSeek-V4-Pro",
+    "trial": 3,
+    "reward": 0,
+    "termination": "token_limit",
+    "cells": 3300,
+    "flip_flops": 314,
+    "paired_functional_suites": [
+      "encrypt"
+    ],
+    "failed_checks": [
+      "rtl_decrypt",
+      "rtl_warm",
+      "rtl_overlap",
+      "rtl_reset",
+      "rtl_stream",
+      "gate_decrypt",
+      "gate_warm",
+      "gate_overlap",
+      "gate_reset",
+      "gate_stream"
+    ],
+    "shell_commands": 6,
+    "agent_seconds": 134.087,
+    "evidence": "pro-trial-3"
+  },
+  {
+    "model": "Qwen2.5-Coder-1.5B-Instruct",
+    "display_name": "Qwen2.5-Coder-1.5B-Instruct",
+    "trial": 1,
+    "reward": 0,
+    "termination": "done",
+    "cells": 3300,
+    "flip_flops": 314,
+    "paired_functional_suites": [
+      "encrypt"
+    ],
+    "failed_checks": [
+      "rtl_decrypt",
+      "rtl_warm",
+      "rtl_overlap",
+      "rtl_reset",
+      "rtl_stream",
+      "gate_decrypt",
+      "gate_warm",
+      "gate_overlap",
+      "gate_reset",
+      "gate_stream"
+    ],
+    "shell_commands": 1,
+    "agent_seconds": 42.062,
+    "evidence": "qwen-trial-1"
+  },
+  {
+    "model": "Qwen2.5-Coder-1.5B-Instruct",
+    "display_name": "Qwen2.5-Coder-1.5B-Instruct",
+    "trial": 2,
+    "reward": 0,
+    "termination": "done",
+    "cells": 3300,
+    "flip_flops": 314,
+    "paired_functional_suites": [
+      "encrypt"
+    ],
+    "failed_checks": [
+      "rtl_decrypt",
+      "rtl_warm",
+      "rtl_overlap",
+      "rtl_reset",
+      "rtl_stream",
+      "gate_decrypt",
+      "gate_warm",
+      "gate_overlap",
+      "gate_reset",
+      "gate_stream"
+    ],
+    "shell_commands": 1,
+    "agent_seconds": 185.467,
+    "evidence": "qwen-trial-2"
+  },
+  {
+    "model": "Qwen2.5-Coder-1.5B-Instruct",
+    "display_name": "Qwen2.5-Coder-1.5B-Instruct",
+    "trial": 3,
+    "reward": 0,
+    "termination": "done",
+    "cells": null,
+    "flip_flops": null,
+    "paired_functional_suites": [],
+    "failed_checks": [
+      "source_contract"
+    ],
+    "shell_commands": 1,
+    "agent_seconds": 53.994,
+    "evidence": "qwen-trial-3"
+  }
+]

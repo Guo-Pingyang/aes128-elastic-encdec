@@ -1,0 +1,11 @@
+--- a/aes128.sv
++++ b/aes128.sv
+@@ -294,7 +294,7 @@
+     wire publish = (phase == PUBLISH) && output_slot;
+     assign in_ready = (phase == IDLE) || publish;
+     wire accept = in_valid && in_ready;
+-    wire cache_hit = cache_valid && (in_key == cached_key);
++    wire cache_hit = 1'b0;
+     wire use_cache = in_decrypt && cache_hit;
+     wire [127:0] initial_key = use_cache ? cached_last_round_key : in_key;
+ 

@@ -1,0 +1,41 @@
+{
+  "reward": 0,
+  "checks": {
+    "source_contract": {
+      "pass": true
+    },
+    "rtl_compile": {
+      "pass": true
+    },
+    "rtl_encrypt": {
+      "pass": true,
+      "blocks": 15,
+      "max_latency": 160
+    },
+    "rtl_decrypt": {
+      "pass": false,
+      "detail": "decrypt output exceeded 190 cycles (warm=0)"
+    },
+    "rtl_warm": {
+      "pass": false,
+      "detail": "warm output exceeded 190 cycles (warm=0)"
+    },
+    "rtl_overlap": {
+      "pass": false,
+      "detail": "overlap did not accept a second request behind the stalled first result"
+    },
+    "rtl_reset": {
+      "pass": false,
+      "detail": "reset output exceeded 190 cycles (warm=0)"
+    },
+    "rtl_stream": {
+      "pass": false,
+      "detail": "stream progress sent=1 received=0"
+    },
+    "synthesis": {
+      "pass": false,
+      "detail": "s `\\aes128.$proc$aes128.sv:0$80'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:290$65.$result' from process `\\aes128.$proc$aes128.sv:0$80'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:290$65.x' from process `\\aes128.$proc$aes128.sv:0$80'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:290$65.y' from process `\\aes128.$proc$aes128.sv:0$80'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:291$66.$result' from process `\\aes128.$proc$aes128.sv:0$80'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:291$66.x' from process `\\aes128.$proc$aes128.sv:0$80'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:291$66.y' from process `\\aes128.$proc$aes128.sv:0$80'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:289$67.$result' from process `\\aes128.$proc$aes128.sv:0$80'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:289$67.x' from process `\\aes128.$proc$aes128.sv:0$80'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:289$67.y' from process `\\aes128.$proc$aes128.sv:0$80'.\nNo latch iERROR: Latch inferred for signal `\\aes128.\\t' from always_comb process `\\aes128.$proc$aes128.sv:0$80'."
+    }
+  },
+  "grader_seconds": 2.234
+}

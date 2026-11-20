@@ -1,0 +1,35 @@
+schema_version = "1.4"
+artifacts = ["/app/aes128.sv"]
+
+[task]
+name = "local/aes128-elastic-encdec"
+description = "Extend a compact AES-128 core with inverse cipher, bounded repeated-key latency, and backpressured block traffic."
+keywords = ["rtl", "hardware-verification", "aes", "yosys", "synthesis", "ready-valid"]
+
+[metadata]
+domain = "engineering-sciences"
+field = "electrical-engineering"
+subfield = "digital-hardware-verification"
+tags = ["rtl", "hardware-verification", "aes", "yosys", "synthesis", "ready-valid"]
+difficulty = "hard"
+
+[agent]
+timeout_sec = 600.0
+
+[environment]
+cpus = 2
+memory_mb = 2048
+storage_mb = 4096
+build_timeout_sec = 600.0
+network_mode = "no-network"
+
+[verifier]
+timeout_sec = 240.0
+environment_mode = "separate"
+
+[verifier.environment]
+cpus = 2
+memory_mb = 2048
+storage_mb = 4096
+build_timeout_sec = 600.0
+network_mode = "no-network"

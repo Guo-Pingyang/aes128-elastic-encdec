@@ -1,0 +1,10 @@
+{
+  "reward": 0,
+  "checks": {
+    "source_contract": {
+      "pass": false,
+      "detail": "expected exactly one aes128 module"
+    }
+  },
+  "grader_seconds": 0.0
+}

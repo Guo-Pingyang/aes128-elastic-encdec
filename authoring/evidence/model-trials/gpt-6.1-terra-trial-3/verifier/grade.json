@@ -1,0 +1,91 @@
+{
+  "reward": 0,
+  "checks": {
+    "source_contract": {
+      "pass": true
+    },
+    "rtl_compile": {
+      "pass": true
+    },
+    "rtl_encrypt": {
+      "pass": true,
+      "blocks": 15,
+      "max_latency": 151
+    },
+    "rtl_decrypt": {
+      "pass": true,
+      "blocks": 15,
+      "max_latency": 181
+    },
+    "rtl_warm": {
+      "pass": true,
+      "blocks": 8,
+      "max_latency": 181,
+      "warm_max_latency": 151
+    },
+    "rtl_overlap": {
+      "pass": true,
+      "blocks": 6,
+      "max_latency": 181
+    },
+    "rtl_reset": {
+      "pass": true,
+      "blocks": 2,
+      "max_latency": 181
+    },
+    "rtl_stream": {
+      "pass": true,
+      "blocks": 16
+    },
+    "synthesis": {
+      "pass": true
+    },
+    "mapped_structure": {
+      "pass": true
+    },
+    "cell_budget": {
+      "pass": false,
+      "cells": 5301,
+      "limit": 5100
+    },
+    "flip_flop_budget": {
+      "pass": true,
+      "flip_flops": 572,
+      "limit": 720
+    },
+    "gate_compile": {
+      "pass": true
+    },
+    "gate_encrypt": {
+      "pass": true,
+      "blocks": 15,
+      "max_latency": 151
+    },
+    "gate_decrypt": {
+      "pass": true,
+      "blocks": 15,
+      "max_latency": 181
+    },
+    "gate_warm": {
+      "pass": true,
+      "blocks": 8,
+      "max_latency": 181,
+      "warm_max_latency": 151
+    },
+    "gate_overlap": {
+      "pass": true,
+      "blocks": 6,
+      "max_latency": 181
+    },
+    "gate_reset": {
+      "pass": true,
+      "blocks": 2,
+      "max_latency": 181
+    },
+    "gate_stream": {
+      "pass": true,
+      "blocks": 16
+    }
+  },
+  "grader_seconds": 10.455
+}

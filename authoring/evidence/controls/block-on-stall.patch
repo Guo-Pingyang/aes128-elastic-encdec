@@ -1,0 +1,11 @@
+--- a/aes128.sv
++++ b/aes128.sv
+@@ -292,7 +292,7 @@
+ 
+     wire output_slot = !out_valid || out_ready;
+     wire publish = (phase == PUBLISH) && output_slot;
+-    assign in_ready = (phase == IDLE) || publish;
++    assign in_ready = output_slot && ((phase == IDLE) || publish);
+     wire accept = in_valid && in_ready;
+     wire cache_hit = cache_valid && (in_key == cached_key);
+     wire use_cache = in_decrypt && cache_hit;

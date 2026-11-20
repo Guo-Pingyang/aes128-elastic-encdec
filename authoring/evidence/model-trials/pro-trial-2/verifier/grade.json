@@ -1,0 +1,81 @@
+{
+  "reward": 0,
+  "checks": {
+    "source_contract": {
+      "pass": true
+    },
+    "rtl_compile": {
+      "pass": true
+    },
+    "rtl_encrypt": {
+      "pass": true,
+      "blocks": 15,
+      "max_latency": 160
+    },
+    "rtl_decrypt": {
+      "pass": false,
+      "detail": "decrypt block 0 mismatch got=4f638c735f614301567824b1a21a4f6a expected=00112233445566778899aabbccddeeff"
+    },
+    "rtl_warm": {
+      "pass": false,
+      "detail": "warm block 0 mismatch got=572f67a6a203b1df37f4f1c7721bfcc9 expected=46563e8e591ff669c545816afc1757ba"
+    },
+    "rtl_overlap": {
+      "pass": false,
+      "detail": "overlap did not accept a second request behind the stalled first result"
+    },
+    "rtl_reset": {
+      "pass": false,
+      "detail": "reset block 0 mismatch got=4f638c735f614301567824b1a21a4f6a expected=00112233445566778899aabbccddeeff"
+    },
+    "rtl_stream": {
+      "pass": false,
+      "detail": "stream block 0 mismatch got=572f67a6a203b1df37f4f1c7721bfcc9 expected=46563e8e591ff669c545816afc1757ba"
+    },
+    "synthesis": {
+      "pass": true
+    },
+    "mapped_structure": {
+      "pass": true
+    },
+    "cell_budget": {
+      "pass": true,
+      "cells": 3300,
+      "limit": 5100
+    },
+    "flip_flop_budget": {
+      "pass": true,
+      "flip_flops": 314,
+      "limit": 720
+    },
+    "gate_compile": {
+      "pass": true
+    },
+    "gate_encrypt": {
+      "pass": true,
+      "blocks": 15,
+      "max_latency": 160
+    },
+    "gate_decrypt": {
+      "pass": false,
+      "detail": "decrypt block 0 mismatch got=4f638c735f614301567824b1a21a4f6a expected=00112233445566778899aabbccddeeff"
+    },
+    "gate_warm": {
+      "pass": false,
+      "detail": "warm block 0 mismatch got=572f67a6a203b1df37f4f1c7721bfcc9 expected=46563e8e591ff669c545816afc1757ba"
+    },
+    "gate_overlap": {
+      "pass": false,
+      "detail": "overlap did not accept a second request behind the stalled first result"
+    },
+    "gate_reset": {
+      "pass": false,
+      "detail": "reset block 0 mismatch got=4f638c735f614301567824b1a21a4f6a expected=00112233445566778899aabbccddeeff"
+    },
+    "gate_stream": {
+      "pass": false,
+      "detail": "stream block 0 mismatch got=572f67a6a203b1df37f4f1c7721bfcc9 expected=46563e8e591ff669c545816afc1757ba"
+    }
+  },
+  "grader_seconds": 3.927
+}

@@ -1,0 +1,61 @@
+[
+  {
+    "control": "block-on-stall",
+    "reward": 0,
+    "cells": 4853,
+    "flip_flops": 682,
+    "failed_checks": [
+      "rtl_overlap",
+      "gate_overlap"
+    ],
+    "submission_sha256": "1aca304c849e666b72e67655759c2772bdfc35b19275a87a66330479c939ca10"
+  },
+  {
+    "control": "oracle",
+    "reward": 1,
+    "cells": 4853,
+    "flip_flops": 682,
+    "failed_checks": [],
+    "submission_sha256": "e2748d06ad6d421a15fb1b9ff6aad55313861c927ebd2cdb1cad4890668c9731"
+  },
+  {
+    "control": "recompute-key",
+    "reward": 0,
+    "cells": 4214,
+    "flip_flops": 425,
+    "failed_checks": [
+      "rtl_warm",
+      "gate_warm"
+    ],
+    "submission_sha256": "1cc23fb360cbace9b2d2a148a617a7b478b621a1d4026173311476a83d29d4d1"
+  },
+  {
+    "control": "separate-sboxes",
+    "reward": 0,
+    "cells": 5317,
+    "flip_flops": 682,
+    "failed_checks": [
+      "cell_budget"
+    ],
+    "submission_sha256": "c571bd623af0f8bc58fe835987e36310924bf4283de8f569c28562aff7544319"
+  },
+  {
+    "control": "starter",
+    "reward": 0,
+    "cells": 3300,
+    "flip_flops": 314,
+    "failed_checks": [
+      "rtl_decrypt",
+      "rtl_warm",
+      "rtl_overlap",
+      "rtl_reset",
+      "rtl_stream",
+      "gate_decrypt",
+      "gate_warm",
+      "gate_overlap",
+      "gate_reset",
+      "gate_stream"
+    ],
+    "submission_sha256": "7f3fccd45ca493ff92ac69531935da1144dd9c3661bc72caac0d6b59ebdabb9f"
+  }
+]

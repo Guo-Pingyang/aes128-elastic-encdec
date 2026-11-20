@@ -1,0 +1,41 @@
+{
+  "reward": 0,
+  "checks": {
+    "source_contract": {
+      "pass": true
+    },
+    "rtl_compile": {
+      "pass": true
+    },
+    "rtl_encrypt": {
+      "pass": true,
+      "blocks": 15,
+      "max_latency": 160
+    },
+    "rtl_decrypt": {
+      "pass": false,
+      "detail": "decrypt block 0 mismatch got=6e8d6f3ffa87475c84faf94ba0660e1a expected=00112233445566778899aabbccddeeff"
+    },
+    "rtl_warm": {
+      "pass": false,
+      "detail": "warm block 0 mismatch got=f8157f992a95e8c9d3145a7dd2cc26ec expected=46563e8e591ff669c545816afc1757ba"
+    },
+    "rtl_overlap": {
+      "pass": false,
+      "detail": "overlap did not accept a second request behind the stalled first result"
+    },
+    "rtl_reset": {
+      "pass": false,
+      "detail": "reset block 0 mismatch got=6e8d6f3ffa87475c84faf94ba0660e1a expected=00112233445566778899aabbccddeeff"
+    },
+    "rtl_stream": {
+      "pass": false,
+      "detail": "stream block 0 mismatch got=f8157f992a95e8c9d3145a7dd2cc26ec expected=46563e8e591ff669c545816afc1757ba"
+    },
+    "synthesis": {
+      "pass": false,
+      "detail": "for signal `\\aes128.\\xtime$func$aes128.sv:480$81.x' from process `\\aes128.$proc$aes128.sv:0$92'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:480$81.y' from process `\\aes128.$proc$aes128.sv:0$92'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:480$82.$result' from process `\\aes128.$proc$aes128.sv:0$92'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:480$82.x' from process `\\aes128.$proc$aes128.sv:0$92'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:480$82.y' from process `\\aes128.$proc$aes128.sv:0$92'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:476$83.$result' from process `\\aes128.$proc$aes128.sv:0$92'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:476$83.x' from process `\\aes128.$proc$aes128.sv:0$92'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:476$83.y' from process `\\aes128.$proc$aes128.sv:0$92'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:476$84.$result' from process `\\aes128.$proc$aes128.sv:0$92'.\nNo latch inferred for signal `\\aes128.\\xtime$func$aes128.sv:47ERROR: Latch inferred for signal `\\aes128.\\t' from always_comb process `\\aes128.$proc$aes128.sv:0$92'."
+    }
+  },
+  "grader_seconds": 0.524
+}

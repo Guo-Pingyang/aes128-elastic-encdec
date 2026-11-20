@@ -1,0 +1,17 @@
+{
+  "harbor_version": "0.25.0",
+  "environment": "Ubuntu 24.04 WSL with Bubblewrap",
+  "lint": [],
+  "controls": [
+    {
+      "agent": "nop",
+      "reward": 0,
+      "verifier_exception": null
+    },
+    {
+      "agent": "oracle",
+      "reward": 1,
+      "verifier_exception": null
+    }
+  ]
+}
